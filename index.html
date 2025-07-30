@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service M.S - FRP Bypass & Mobile Solutions</title>
+    <meta name="description" content="Professional FRP bypass services for Samsung, Xiaomi, Oppo and all Android devices. Contact: 09427630313">
+    <meta name="keywords" content="FRP bypass, Samsung FRP, Android unlock, service myint, ဖုန်းဖွင့်ဝန်ဆောင်မှု">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --success-color: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .content-section {
+            flex: 0 0 70%;
+            padding-right: 30px;
+        }
+        
+        .sidebar {
+            flex: 0 0 30%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .dark-mode .sidebar {
+            background-color: #2c2c2c;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .dark-mode h1, 
+        .dark-mode h2, 
+        .dark-mode h3 {
+            color: var(--light-color);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            color: var(--accent-color);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode .section {
+            background-color: #2c2c2c;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        ul li:before {
+            content: "→";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        ul li a {
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .dark-mode ul li a {
+            color: #f0f0f0;
+        }
+        
+        ul li a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+        
+        .search-box {
+            margin-bottom: 20px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        .dark-mode .search-box input {
+            background-color: #3a3a3a;
+            color: white;
+            border-color: #555;
+        }
+        
+        .profile-widget {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-widget img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        
+        .archive-list {
+            margin-top: 15px;
+        }
+        
+        .archive-list a {
+            display: block;
+            padding: 8px 0;
+            color: var(--dark-color);
+            text-decoration: none;
+        }
+
+        .dark-mode .archive-list a {
+            color: #f0f0f0;
+        }
+        
+        .archive-list a:hover {
+            color: var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid var(--secondary-color);
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .dark-mode .testimonial {
+            background-color: #333;
+        }
+
+        /* Loading Animation */
+        .loader-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;}
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Call Button */
+        .call-button {
+            display: inline-block;
+            background-color: var(--success-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+            }
+            /* Responsive design */
+        @media (max-width: 768px) {
+            .content-section, .sidebar {
+                flex: 0 0 100%;
+                padding-right: 0;
+            }
+            
+            .sidebar {
+                margin-top: 30px;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Service M.S <span class="secure-badge">Secure</span></h1>
+            <button class="dark-mode-toggle" id="darkModeToggle">🌓</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="content-section">
+                <div class="section">
+                    <h2>FRP BYPASS</h2>
+                    
+                    <h3>HPBYPASS SPORT</h3>
+                    <ul>
+                        <li><a href="#open-settings">Open Settings App</a></li>
+                        <li><a href="#set-screen-lock">Open Set Screen Lock</a></li>
+                        <li><a href="#google-search">Open Google Quick Search Box</a></li>
+                    </ul>
+                    
+                    <h3>Open Chrome Browser</h3>
+                    <ul>
+                        <li><a href="#login-browser">Open Login Browser</a></li>
+                        <li><a href="#google-maps">Open Google Maps</a></li>
+                        <li><a href="#gmail">Open Gmail</a></li>
+                        <li><a href="#google-assistant">Open Google Assistant</a></li>
+                        <li><a href="#samsung-browser">Open Samsung Internet Browser</a></li>
+                        <li><a href="#galaxy-store">Open Samsung Galaxy Store</a></li>
+                        <li><a href="#my-files">Open Samsung My Files</a></li>
+                        <li><a href="#youtube">Open Youtube App</a></li>
+                        <li><a href="#calculator">Open Calculator</a></li>
+                        <li><a href="#alliance-shield">Open Alliance Shield</a></li>
+                        <li><a href="#alliance-shield-store">Open Alliance Shield on Galaxy Store</a></li>
+                        <li><a href="#home-launcher">Open Home Launcher</a></li>
+                        <li><a href="#touch-id">Open Samsung Touch ID</a></li>
+                        <li><a href="#files-shortcut">Open files Shortcut on Galaxy Store</a></li>
+                        <li><a href="#dialer">Open Samsung Dialer Call</a></li>
+                        <li><a href="#secure-folder">Open Samsung Secure Folder</a></li>
+                        <li><a href="#smart-switch">Open Samsung Smart Switch App</a></li>
+                        <li><a href="#hidden-settings">Open Android Hidden Settings</a></li>
+                        <li><a href="#s9-launcher">Open S9 Launcher</a></li>
+                        <li><a href="#adb-settings">Open ADB Settings</a></li>
+                        <li><a href="#usb-settings">Open USB Settings</a></li>
+                        <li><a href="#mi-file-manager">Open Mi File Manager</a></li>
+                        <li><a href="#xiaomi-shareme">Open Xiaomi ShareMe</a></li>
+                        <li><a href="#oppo-clone">Open Oppo Clone Oneplus</a></li>
+                        <li><a href="#motorola-launcher">Open Motorola Launcher</a></li>
+                        <li><a href="#clone-phone">Open Clone Phone oneplus</a></li>
+                        <li><a href="#activity-launcher">Open Activity Launcher</a></li>
+                        <li><a href="#palm-store">Open Palm Store</a></li>
+                        <li><a href="#easy-share">Open Easy Share App</a></li>
+                    </ul>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="section">
+                    <h3>Customer Sevice </h3>
+                    <div class="testimonial">
+                        <p>"Service M.S ကြောင့် FRP Lock ပြဿနာ ၆ မိနစ်အတွင်းဖြေရှင်းနိုင်ခဲ့တယ်!"</p>
+                    <div class="testimonial">
+                        <p>" စိတ်ချရတဲ့ဝန်ဆောင်မှုပါ။ အကြံပြုပါတယ်!"</p>
+                        <p>   -Mi Account Lock</p>
+                        <p>   -Tecno/Infinix/Itel MDM lock Remove</p>
+                        <p>   -Tool & Crd ရောင်းပေးသည်။</p>
+                        <p>   -Online sever lock scree,photo set</p>
+
+                        <span>- မောင်မြင့်ဆွေ (Rakhine)</span>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="section">
+                    <p><strong>@servicemyint</strong><br>
+                    @Software / Huaware Tools </p>
+                    <p>@ရောင်းပေးပါသည်။</p>
+                    <p>စိတ်ချစွာ ဝယ်ယူနိင်ပါသည်။</p>
+                    <p>တဝ ကျေးဇူးတင်ရေ။</p>
+                    <a href="tel:09427630313" class="call-button">အခုပဲခေါ်ပါ 📞 09427630313</a>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search This Blog">
+                </div>
+                
+                <div class="profile-widget">
+                    <h3>About Me</h3>
+                    <p>servicemyint</p>
+                    <a href="#profile">View my complete profile</a>
+                </div>
+                
+                <div class="section">
+                    <a href="အဆင်‌ပြေကြပါစေ">အဆင်‌ပြေကြပါစေ</a>
+                </div>
+                
+                <div class="section">
+                    <h3>Tools Archive</h3>
+                    <div class="archive-list">
+                        <a href="#july-2024">July 2025 (3)</a>
+                        <a href="#june-2025">June 2025 (6)</a>
+                        <a href="#may-2025">May 2025 (12)</a>
+                        <a href="သက်တမ်းတိုး">သက်တမ်းတိုး</a>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>Payment Methods</h3>
+                    <ul>
+                        <li>Wave Pay</li>
+                        <li>KBZ Pay</li>
+                        <li>Cash</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Service M.S. All rights reserved.</p>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><a href="mailto:servicezdd@gmail.com">servicezdd@gmail.com</a></p>
+                <p>Phone: <a href="tel:09427630313">09427630313</a></p>
+                <p>Address: Rakhine, Myanmar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/09427630313" class="whatsapp-float" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" width="35" alt="WhatsApp">
+    </a>
+    
+    <!-- JavaScript -->
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function() {
+            document.getElementById('loader').style.display = 'none';
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Basic security features
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Google reCAPTCHA would be added here
+        console.log('Security features initialized');
+    </script>
+
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
